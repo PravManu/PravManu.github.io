@@ -345,9 +345,66 @@ a:hover {
     transition: transform 0.2s ease-in-out;
 }
 
+.message {
+    line-height: 3;
+}
+@media only screen and (max-width: 768px) {
+  .article .project-card-tmpl.section {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+      -ms-flex-pack: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+  }
+  .article .project-card-tmpl.section .project-card {
+      width: 100%;
+  }
+  .article .project-card-tmpl.section .img-responsive {
+      width: 50%;
+  }
+  .field-type {
+      margin: 10px 5px 5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 150%;
+  }
+  p {
+    font-size: 100%;
+    font-weight: 600;
+  }
+  .page-container {
+    width: 111%;
+  }
+  .article .section-wrapper .about-page.section {
+    height: 120vh;
+  }
+  .article .project-card-tmpl.section {
+    height: 105vh;
+  }
+  .about-us.section {
+    position: relative;
+  }
+  .about-us-section {
+    position: absolute;
+    top: 60px;
+  }
+  .article .project-card-tmpl.section .img-responsive {
+      width: 25%;
+  }
+  .field-type {
+    margin: 5px;
+  }
+}
+
 /*iPad in portrait & landscape*/
 @media only screen 
-and (min-device-width : 768px) 
+and (min-device-width : 600px) 
 and (max-device-width : 1023px)  { 
   .article .project-card-tmpl.section {
       display: -ms-flexbox;
@@ -359,17 +416,12 @@ and (max-device-width : 1023px)  {
       align-items: center;
       width: 100%;
       height: 100vh;
+  }
+  /*.article .project-card-tmpl.section .project-card {
       width: 100%;
-  }
-  .article .project-card-tmpl.section .project-card {
-      width: 100%;
-      padding: 10%;
-  }
-  .article .project-card-tmpl.section .img-responsive {
-    width: 50%;
-  }
+  }*/
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 960px) {
     .home-list-wrapper.section-wrapper {
         display: flex;
         flex-flow: column nowrap;
@@ -390,33 +442,9 @@ and (max-device-width : 1023px)  {
     .article .project-card-tmpl.section .project-card {
       width: 50%;
     }
-
-    .article .project-card-tmpl.section .img-responsive {
-        /*width: 40%;*/
-    }
-}
-@media only screen and (max-width: 768px) {
-  .article .project-card-tmpl.section {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-      -ms-flex-pack: center;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100vh;
-  }
-  .article .project-card-tmpl.section .project-card {
-      width: 100%;
-      padding: 1em;
-  }
-  .article .project-card-tmpl.section .img-responsive {
-      width: 50%;
-  }
 }
 /*For nexus 7 devices*/
-@media only screen 
+/*@media only screen 
 and (min-device-width : 600px) 
 and (max-device-width : 960px) { 
   .article .project-card-tmpl.section {
@@ -431,57 +459,15 @@ and (max-device-width : 960px) {
       height: 100vh;
       width: 100%;
   }
-  .article .project-card-tmpl.section .product-sc-img,
+  .article .project-card-tmpl.section .product-sc-img {
+      width: 50%;
+  }
   .article .project-card-tmpl.section .project-card {
       width: 100%;
-  }
-  .article .project-card-tmpl.section .project-card {
       padding: 5%;
   }
-}
-@media only screen and (max-width: 320px) {
-  h1 {
-    font-size: 150%;
-  }
-  p {
-    font-size: 100%;
-    font-weight: 600;
-  }
-  .about-us.section {
-    position: relative;
-  }
-  .about-us-section {
-    position: absolute;
-    top: 60px;
-  }
-}
-.loader-wrapper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: black;
-    opacity: 0.8;
-    z-index: 10000;
-}
+}*/
 
-.loader-wrapper .loader {
-    border: 5px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 5px solid #3498db;
-    width: 80px;
-    height: 80px;
-    -webkit-animation: spin 2s linear infinite;
-    -moz-animation:  spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
 
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }

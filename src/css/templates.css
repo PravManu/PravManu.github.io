@@ -55,13 +55,11 @@
     font-size: 24px;
 }
 .project-details {
-    margin: 30px 0;
+    margin: 20px 0;
 }
-
 .hide, .show + .project-name  {
     display: none;
 }
-
 @media screen and (min-width: 1024px) {
     #projects-filter {
         border: 2px solid #ABACAD;
@@ -107,6 +105,17 @@
     .projects-list-wrapper .project-card .github-link {
         margin-bottom: 0;
         width: 100%;
+    }
+    .home-list-wrapper .project-heading img {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .home-list-wrapper .project-description {
+        text-align: center;
+        padding: 0 1em;
+    }
+    .home-list-wrapper .project-details {
+        padding: 0 1em;
     }
 }
 @media only screen and (min-width: 1024px) {

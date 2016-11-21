@@ -91,7 +91,9 @@ ul.navbar-nav li {
     font-size: 60px;
 }
 .dOverlay a {
-    font-size: 20px
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
 }
 @media screen and (min-width: 1024px) {
     ul.navbar-nav a {
@@ -154,10 +156,10 @@ and (max-device-width : 960px) {
       height: 100vh;
       width: 100%;
   }
-  .article .project-card-tmpl.section .product-sc-img,
+  /*.article .project-card-tmpl.section .product-sc-img,
   .article .project-card-tmpl.section .project-card {
       width: 100%;
-  }
+  }*/
   .article .project-card-tmpl.section .project-card {
       padding: 1em;
   }
